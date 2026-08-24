@@ -1,0 +1,10 @@
+{
+  "description": "Showcases a development group's portfolio with team photos, project details, bilingual support, theme options, and a contact form linked to Google Sheets and email.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
