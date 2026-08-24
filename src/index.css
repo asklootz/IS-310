@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-brand: #00E5A0;
+  --color-brand-dim: #00C48A;
+  --color-brand-glow: rgba(0, 229, 160, 0.15);
+
+  --color-navy-950: #020508;
+  --color-navy-900: #080C18;
+  --color-navy-850: #0C1220;
+  --color-navy-800: #111827;
+  --color-navy-700: #1C2B44;
+  --color-navy-600: #253558;
+  --color-navy-200: #B8C8E8;
+  --color-navy-100: #D8E4F8;
+  --color-navy-50:  #EEF4FF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 160, 0.25) transparent;
+}
+
+*::-webkit-scrollbar { width: 6px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { background: rgba(0, 229, 160, 0.25); border-radius: 3px; }
+
+/* Smooth section transitions */
+section { transition: background-color 0.3s ease; }
