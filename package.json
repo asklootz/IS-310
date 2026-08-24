@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .",
     "build": "vite build",
-    "preview": "vite preview",
+    "dev": "vite --host",
     "format": "oxfmt"
   },
   "dependencies": {
@@ -21,7 +22,6 @@
     "@vitejs/plugin-react": "^6.0.0",
     "autoprefixer": "^10.5.4",
     "init": "^0.1.2",
-    "npx": "^10.2.2",
     "oxfmt": "^0.2.0",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3",
