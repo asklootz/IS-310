@@ -2,11 +2,11 @@
   "name": "figma-make-app",
   "private": true,
   "homepage": "https://asklootz.github.io/IS-310/",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d .",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "dev": "vite --host",
     "format": "oxfmt"
@@ -25,6 +25,7 @@
     "init": "^0.1.2",
     "oxfmt": "^0.2.0",
     "postcss": "^8.5.26",
+    "gh-pages": "^5.0.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.7.0",
     "vite": "^8.0.5",
