@@ -42,7 +42,7 @@ export default function ContactSection({ lang }: Props) {
           {/* Info column */}
           <div className="md:col-span-2 space-y-8">
             <div>
-              <img src="src/images/F5-Small-Logo-With-Text.svg" alt="F5 Logo" className="w-30 h-30" />
+              <img src="https://raw.githubusercontent.com/asklootz/IS-310/fe80bd338c77effe7718ae475a51fca3599c7c9b/src/images/F5-Small-Logo-With-Text.svg" alt="F5 Logo" className="w-30 h-30" />
               <h3 className="font-display font-700 text-2xl text-navy-900 dark:text-white mb-2">F5 Development</h3>
               <p className="text-brand text-sm font-medium mb-4">Refreshing Development</p>
               <p className="text-navy-600 dark:text-navy-300 text-sm leading-relaxed">
