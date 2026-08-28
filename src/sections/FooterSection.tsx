@@ -11,7 +11,7 @@ export default function FooterSection({ lang, scrollTo, navLinks }: Props) {
     <footer className="border-t border-navy-700/20 dark:border-navy-700/40 py-8 px-6">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          <F5Logo size={24} />
+          <img src="https://raw.githubusercontent.com/asklootz/IS-310/fe80bd338c77effe7718ae475a51fca3599c7c9b/src/images/F5-Small-Logo-With-Text.svg" alt="F5 Logo" className="w-15 h-15" />
           <span className="font-display font-600 text-sm text-navy-900 dark:text-navy-100">F5 Development</span>
         </div>
         <p className="text-xs text-navy-500 dark:text-navy-500">

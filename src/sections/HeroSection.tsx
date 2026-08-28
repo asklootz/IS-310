@@ -30,7 +30,7 @@ export default function HeroSection({ lang, scrollTo }: Props) {
         </div>
 
         <div className="flex justify-center mb-8">
-          <img src="https://raw.githubusercontent.com/asklootz/IS-310/fe80bd338c77effe7718ae475a51fca3599c7c9b/src/images/F5-Small-Logo-With-Text.svg" alt="F5 Logo" className="w-30 h-30" />
+          <img src="https://raw.githubusercontent.com/asklootz/IS-310/fe80bd338c77effe7718ae475a51fca3599c7c9b/src/images/F5-Small-Logo-With-Text.svg" alt="F5 Logo" className="w-60 h-60" />
         </div>
 
         <h1 className="font-display font-900 text-5xl md:text-7xl lg:text-8xl leading-none tracking-tight text-navy-900 dark:text-white mb-4">
