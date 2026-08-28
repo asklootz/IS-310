@@ -27,7 +27,7 @@ export default function NavBar({ lang, setLang, dark, setDark, activeSection, sc
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <button onClick={() => handleScrollTo("home")} className="flex items-center gap-3 group">
-          <img src="https://raw.githubusercontent.com/asklootz/IS-310/fe80bd338c77effe7718ae475a51fca3599c7c9b/src/images/F5-Small-Logo-With-Text.svg" alt="F5 Logo" className="w-15 h-15" />
+          <img src="https://raw.githubusercontent.com/asklootz/IS-310/fe80bd338c77effe7718ae475a51fca3599c7c9b/src/images/F5-Small-Logo-With-Text.svg" alt="F5 Logo" className="logo-hue w-15 h-15" />
           <div className="hidden sm:block">
             <div className="font-display font-700 text-sm leading-none text-navy-900 dark:text-navy-50">F5 Development</div>
             <div className="text-xs text-brand leading-none mt-0.5">Refreshing Development</div>
