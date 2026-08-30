@@ -3,7 +3,10 @@ import { type Lang, T } from "@/data/translations"
 import SectionHead from "@/components/SectionHead"
 import F5Logo from "@/components/F5Logo"
 
-const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE"
+const CONTACT_FORM_ENDPOINT = import.meta.env.VITE_CONTACT_FORM_ENDPOINT
+const EMAILJS_SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
+const EMAILJS_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+const EMAILJS_PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 type Props = { lang: Lang }
 
@@ -14,17 +17,44 @@ export default function ContactSection({ lang }: Props) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    if (!CONTACT_FORM_ENDPOINT || !EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
+      setFormStatus("error")
+      setTimeout(() => setFormStatus("idle"), 5000)
+      return
+    }
+
     setFormStatus("sending")
     try {
-      await fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, timestamp: new Date().toISOString(), lang }),
-      })
+      const submission = { ...form, timestamp: new Date().toISOString(), lang }
+      const [emailResponse] = await Promise.all([
+        fetch("https://api.emailjs.com/api/v1.0/email/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            service_id: EMAILJS_SERVICE_ID,
+            template_id: EMAILJS_TEMPLATE_ID,
+            user_id: EMAILJS_PUBLIC_KEY,
+            template_params: submission,
+          }),
+        }),
+        fetch(CONTACT_FORM_ENDPOINT, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(submission),
+        }),
+      ])
+
+      if (!emailResponse.ok) {
+        const errorMessage = await emailResponse.text()
+        throw new Error(`EmailJS request failed (${emailResponse.status}): ${errorMessage}`)
+      }
+
       setFormStatus("success")
       setForm({ name: "", email: "", subject: "", message: "" })
-    } catch {
+    } catch (error) {
+      console.error(error)
       setFormStatus("error")
     }
     setTimeout(() => setFormStatus("idle"), 5000)
