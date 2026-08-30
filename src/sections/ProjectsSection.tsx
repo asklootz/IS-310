@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { type Lang, T } from "@/data/translations"
 import { PROJECTS } from "@/data/projects"
 import SectionHead from "@/components/SectionHead"
@@ -13,6 +13,22 @@ export default function ProjectsSection({ lang }: Props) {
   const [selectedProject, setSelectedProject] = useState<number | null>(null)
   const [projectRect, setProjectRect] = useState<Rect | null>(null)
   const [projectExpanded, setProjectExpanded] = useState(false)
+
+  useEffect(() => {
+    if (selectedProject === null) return
+
+    const originalOverflow = document.body.style.overflow
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeProject()
+    }
+
+    document.body.style.overflow = "hidden"
+    window.addEventListener("keydown", handleKeyDown)
+    return () => {
+      document.body.style.overflow = originalOverflow
+      window.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [selectedProject])
 
   const openProject = (id: number, e: React.MouseEvent<HTMLButtonElement>) => {
     const r = e.currentTarget.getBoundingClientRect()

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { type Lang, T } from "@/data/translations"
 import { MEMBERS } from "@/data/members"
 import SectionHead from "@/components/SectionHead"
@@ -13,6 +13,22 @@ export default function AboutSection({ lang }: Props) {
   const [selectedMember, setSelectedMember] = useState<number | null>(null)
   const [modalRect, setModalRect] = useState<Rect | null>(null)
   const [modalExpanded, setModalExpanded] = useState(false)
+
+  useEffect(() => {
+    if (selectedMember === null) return
+
+    const originalOverflow = document.body.style.overflow
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeMember()
+    }
+
+    document.body.style.overflow = "hidden"
+    window.addEventListener("keydown", handleKeyDown)
+    return () => {
+      document.body.style.overflow = originalOverflow
+      window.removeEventListener("keydown", handleKeyDown)
+    }
+  }, [selectedMember])
 
   const openMember = (id: number, e: React.MouseEvent<HTMLButtonElement>) => {
     const r = e.currentTarget.getBoundingClientRect()
