@@ -6,7 +6,7 @@ type Props = { lang: Lang }
 const STATS = [
   { n: "5", label: { en: "Team Members", no: "Gruppemedlemmer" } },
   { n: "3+", label: { en: "Prosjekter", no: "Prosjekter" } },
-  { n: "2024", label: { en: "Founded", no: "Grunnlagt" } },
+  { n: "2026", label: { en: "Founded", no: "Grunnlagt" } },
   { n: "100%", label: { en: "Passion", no: "Lidenskap" } },
 ]
 
@@ -20,7 +20,7 @@ export default function TeamSection({ lang }: Props) {
 
         <div className="relative w-full aspect-[16/7] rounded-2xl overflow-hidden mb-12 border border-navy-700/20 dark:border-navy-700/40 shadow-2xl bg-navy-800">
           <img
-            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1400&h=600&fit=crop&auto=format"
+            src="https://cdn-blog.adafruit.com/uploads/2025/10/Screenshot-2025-10-29-at-1.03.39-PM.png"
             alt={c.photoLabel}
             className="w-full h-full object-cover"
           />
