@@ -25,7 +25,7 @@ export const MEMBERS: Member[] = [
     website: "https://jimmyht98.github.io/Portef-lje/",
     skills: ["C#", "Python", "TypeScript", "PostgreSQL", "MySQL", "Javascript", "Supabase", "PHP", "Docker", "Git/Github", "Node.js", "React", "Tailwind CSS", "UI/UX", "ASP.NET Core", "Azure"],
     avatar: "JT",
-    photo: "https://pbs.twimg.com/media/GK1454Ob0AA5d8M.jpg",
+    photo: "https://github.com/asklootz/IS-310/blob/main/src/images/Jimmy-Bilde.png?raw=true",
     color: "from-blue-500 to-brand",
   },
   {
@@ -39,7 +39,7 @@ export const MEMBERS: Member[] = [
     website: "#",
     skills: ["Figma", "React", "Tailwind CSS", "C#/.NET", "UI/UX", "AI", "Team Work", "Git", "Jira"],
     avatar: "SK",
-    photo: "https://pbs.twimg.com/media/GK1454Ob0AA5d8M.jpg",
+    photo: "https://github.com/asklootz/IS-310/blob/main/src/images/Synne-Bilde.png?raw=true",
     color: "from-yellow-500 to-brand",
   },
   {
@@ -53,7 +53,7 @@ export const MEMBERS: Member[] = [
     website: "https://asklootz.github.io/",
     skills: ["C#/NET", "Docker", "Git/Github", "Python", "PostgreSQL", "MySQL", "Node.js", "TypeScript", "React", "Tailwind CSS", "UI/UX", "Team Work", "Communication", "Cisco", "Linux", "Windows Server", "Networking", "GIS", "Data Analysis"],
     avatar: "AL",
-    photo: "src/images/AskBilde.heic",
+    photo: "https://github.com/asklootz/IS-310/blob/main/src/images/Ask-Bilde.png?raw=true",
     color: "from-pink-500 to-brand",
   },
   {
@@ -70,7 +70,7 @@ export const MEMBERS: Member[] = [
     website: "#",
     skills: ["Figma", "Trello/Jira", "CSS/Tailwind CSS", "HTML", "React", "UI/UX", "Team Work", "Communication"],
     avatar: "MR",
-    photo: "https://pbs.twimg.com/media/GK1454Ob0AA5d8M.jpg",
+    photo: "https://github.com/asklootz/IS-310/blob/main/src/images/Mina-Bilde.png?raw=true",
     color: "from-violet-500 to-brand",
   },
   {
@@ -87,7 +87,7 @@ export const MEMBERS: Member[] = [
     website: "#",
     skills: ["Figma", "UX/UI", "Prototyping", "React", "QA", "Github", "Team Work", "Communication"],
     avatar: "RSK",
-    photo: "https://pbs.twimg.com/media/GK1454Ob0AA5d8M.jpg",
+    photo: "https://github.com/asklootz/IS-310/blob/main/src/images/Rikke-Bilde.png?raw=true",
     color: "from-red-500 to-brand",
   },
 ]

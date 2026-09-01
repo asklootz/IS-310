@@ -51,13 +51,13 @@ export const PROJECTS: Project[] = [
       no: "En moderne, responsiv og interaktiv hjemmeside for F5 Utvikling. Bygget for faget IS-310 ved Universitetet i Agder, dette prosjektet viser våre ferdigheter innen frontend- og backend-utvikling, design og DevOps. Den har en dynamisk teamseksjon, prosjektvisning, kontaktskjema og jevn rulle-navigasjon.",
     },
     tech: ["Node.js", "React", "Github Actions", "Vite", "Figma", "Agentic AI"],
-    status: { en: "Planning", no: "Planlegging" },
+    status: { en: "Completed", no: "Fullført" },
     statusColor: "bg-blue-500/20 text-blue-400",
     github: "https://github.com/asklootz/IS-310",
     visit: "https://asklootz.github.io/IS-310/",
-    image: "https://cdn-blog.adafruit.com/uploads/2025/10/Screenshot-2025-10-29-at-1.03.39-PM.png",
+    image: "https://github.com/asklootz/IS-310/blob/main/src/images/Gruppe-Bilde.png?raw=true",
   },
-  {
+  /*{
     id: 4,
     name: "CityFlow",
     tagline: { en: "Urban Mobility Dashboard", no: "Urbant Mobilitets Dashboard" },
@@ -72,4 +72,5 @@ export const PROJECTS: Project[] = [
     visit: "#",
     image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=400&fit=crop&auto=format",
   },
+*/ 
 ]
