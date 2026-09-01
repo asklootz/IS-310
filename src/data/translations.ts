@@ -5,7 +5,7 @@ export const T = {
     nav: { home: "Home", team: "The Team", about: "About Us", projects: "Projects", contact: "Contact" },
     hero: {
       badge: "Students with a passion for technology",
-      tagline: "Refreshing Development - Refreshing ideas",
+      tagline: "Refreshing Development - Refreshing Ideas",
       desc: "Students who craft modern, scalable digital solutions with passion and precision — one git commit at a time.",
       cta: "Explore Our Work",
       scroll: "Scroll down",
@@ -49,7 +49,7 @@ export const T = {
     nav: { home: "Hjem", team: "Teamet", about: "Om oss", projects: "Prosjekt", contact: "Kontakt" },
     hero: {
       badge: "Studenter med lidenskap for teknologi",
-      tagline: "Refreshing Development - Refreshing ideas",
+      tagline: "Refreshing Development - Refreshing Ideas",
       desc: "Studenter som lager moderne, skalerbare digitale løsninger med lidenskap og presisjon — én git commit av gangen.",
       cta: "Oppdag vårt arbeid",
       scroll: "Scroll ned",
