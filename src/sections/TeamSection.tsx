@@ -20,7 +20,7 @@ export default function TeamSection({ lang }: Props) {
 
         <div className="relative w-full aspect-[16/7] rounded-2xl overflow-hidden mb-12 border border-navy-700/20 dark:border-navy-700/40 shadow-2xl bg-navy-800">
           <img
-            src="https://github.com/asklootz/IS-310/blob/main/src/images/Gruppe-Bilde.png?raw=true"
+            src="https://media.githubusercontent.com/media/asklootz/IS-310/main/src/images/Gruppe-Bilde.webp"
             alt={c.photoLabel}
             className="w-full h-full object-cover"
           />
