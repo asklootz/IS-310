@@ -57,7 +57,7 @@ export const T = {
     team: {
       title: "Vårt Team",
       sub: "Menneskene bak F5 Development",
-      desc: "Vi er en dedikert gruppe på fem studente som er forent av vår lidenskap for å bygge meningsfulle digitale opplevelser. Sammen bringer vi mangfoldig ekspertise og bakgrunner innen frontend, backend, design og DevOps — alltid med mål om å fornye og forbedre.",
+      desc: "Vi er en dedikert gruppe på fem studenter som er forent av vår lidenskap for å bygge meningsfulle digitale opplevelser. Sammen bringer vi mangfoldig ekspertise og bakgrunner innen frontend, backend, design og DevOps — alltid med mål om å fornye og forbedre.",
       photoLabel: "F5 Development Team",
     },
     about: { 
