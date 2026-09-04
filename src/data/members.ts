@@ -17,7 +17,7 @@ export const MEMBERS: Member[] = [
   {
     id: 1,
     name: "Jimmy Hai Trinh",
-    role: { en: "Project Manager", no: "Gruppeleder" },
+    role: { en: "Project Manager & Fullstack Developer", no: "Gruppeleder & Fullstack Utvikler" },
     bio: { en: "Project manager, fullstack developer, and database management. Education: Bachelor's in Electronic Music and Master's in Music Business & Management.", no: "Jeg er en 27 år gammel student med en tverrfaglig bakgrunn innen musikk og teknologi. Siden 2018 har jeg vært i kontinuerlig utdanning, noe som har gitt meg både faglig dybde og sterk gjennomføringsevne.\nJeg har en bachelorgrad i elektronisk musikk og en mastergrad i Music Business & Management. Gjennom disse studiene har jeg utviklet en god forståelse for kreativt arbeid, prosjektstyring og samarbeid i dynamiske miljøer. I dag studerer jeg IT og informasjonssystemer ved Universitetet i Agder, hvor jeg bygger kompetanse innen systemutvikling, teknologi og digitale løsninger." },
     email: "jimmyt18@uia.no",
     linkedin: "https://www.linkedin.com/in/jimmy-trinh-578951264/",
