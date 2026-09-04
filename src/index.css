@@ -23,6 +23,9 @@
   --color-navy-200: #B8C8E8;
   --color-navy-100: #D8E4F8;
   --color-navy-50:  #EEF4FF;
+
+  --color-black: #000000;
+  --color-grey-1: #D9D9D9;
 }
 
 html {
@@ -47,4 +50,14 @@ section { transition: background-color 0.3s ease; }
 
 .dark .logo-hue {
   filter: drop-shadow(0 0 12px rgba(0, 229, 160, 0.45)) drop-shadow(0 0 20px rgba(0, 229, 160, 0.15));
+}
+
+.logo-text{
+  fill: black;
+  stroke: black;
+}
+
+.dark .logo-text {
+  fill: #D9D9D9;
+  stroke: #D9D9D9;
 }
