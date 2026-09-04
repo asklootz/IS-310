@@ -40,7 +40,7 @@ export const PROJECTS: Project[] = [
     statusColor: "bg-emerald-500/20 text-emerald-400",
     github: "https://github.com/asklootz/IS-218_Gruppe4",
     visit: "#",
-    image: "https://private-user-images.githubusercontent.com/178719866/584719735-dbccd2e6-07a7-4acb-90e6-77d6c96b23ec.webp?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODgwNjcxMzgsIm5iZiI6MTc4ODA2NjgzOCwicGF0aCI6Ii8xNzg3MTk4NjYvNTg0NzE5NzM1LWRiY2NkMmU2LTA3YTctNGFjYi05MGU2LTc3ZDZjOTZiMjNlYy53ZWJwP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDgzMCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA4MzBUMDUxMzU4WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZTZkMzJlZmFjNTg5ZDFjOGI5YTIwZjYwZGU0NmMwZTM5MTdkMjI4YmRjY2MwZDMyMWUwMGZjOTEwMzQwOGZhMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGd2VicCJ9.t5VWfLBtQn5V0yDURAuGYP94R9kHSGePFGjNQ_GDbsQ",
+    image: "https://github.com/asklootz/IS-218_Gruppe4/blob/main/BeredskartLogo.webp?raw=true",
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ export const PROJECTS: Project[] = [
     statusColor: "bg-blue-500/20 text-blue-400",
     github: "https://github.com/asklootz/IS-310",
     visit: "https://asklootz.github.io/IS-310/",
-    image: "https://github.com/asklootz/IS-310/blob/main/src/images/Gruppe-Bilde.png?raw=true",
+    image: "https://media.githubusercontent.com/media/asklootz/IS-310/main/src/images/Gruppe-Bilde.webp",
   },
   /*{
     id: 4,
