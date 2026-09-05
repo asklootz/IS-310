@@ -48,7 +48,7 @@ export default function TeamSection({ lang }: Props) {
                 https://www.youtube.com/embed/YOUR_VIDEO_ID
                 or a direct .mp4 URL for a self-hosted video */}
             <iframe 
-              src="https://www.youtube.com/embed/zHmA4o-MDlI?si=PzskUyszWb-0xHlC" 
+              src="https://www.youtube.com/embed/bavJDBfBUsI?si=OrHuqTL9QZa4AOSR" 
               title="F5 Development Team Video"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin" 
