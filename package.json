@@ -1,7 +1,7 @@
 {
   "name": "figma-make-app",
   "private": true,
-  "homepage": "https://asklootz.github.io/IS-310/",
+  "homepage": "https://asklootz.github.io/",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
