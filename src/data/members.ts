@@ -7,6 +7,7 @@ export type Member = {
   linkedin: string
   github: string
   website: string
+  cv: string
   skills: string[]
   avatar: string
   photo: string
@@ -23,6 +24,7 @@ export const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/jimmy-trinh-578951264/",
     github: "https://github.com/jimmyht98",
     website: "https://jimmyht98.github.io/Portef-lje/",
+    cv: "https://drive.google.com/file/d/187yz3QWQXJ5TumqeH05KE_WTc14ZFZTu/view?usp=sharing",
     skills: ["C#", "Python", "TypeScript", "PostgreSQL", "MySQL", "Javascript", "Supabase", "PHP", "Docker", "Git/Github", "Node.js", "React", "Tailwind CSS", "UI/UX", "ASP.NET Core", "Azure"],
     avatar: "JT",
     photo: "https://media.githubusercontent.com/media/asklootz/IS-310/main/src/images/Jimmy-Bilde.webp",
@@ -37,6 +39,7 @@ export const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/synne-kyrkjeboe/",
     github: "https://github.com/synnekyrkjebo",
     website: "#",
+    cv: "https://drive.google.com/file/d/1cImsKN6b2qiVOrWPOmNVsmIV1iVRebSn/view?usp=sharing",
     skills: ["Figma", "React", "Tailwind CSS", "C#/.NET", "UI/UX", "AI", "Team Work", "Git", "Jira"],
     avatar: "SK",
     photo: "https://media.githubusercontent.com/media/asklootz/IS-310/main/src/images/Synne-Bilde.webp",
@@ -51,6 +54,7 @@ export const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/ask-lootz/",
     github: "https://github.com/asklootz",
     website: "https://asklootz.github.io/",
+    cv: "https://drive.google.com/file/d/16QSYLIq_fnZAof9lCdP5-Ouk-IWSc9AT/view?usp=sharing",
     skills: ["C#/NET", "Docker", "Git/Github", "Python", "PostgreSQL", "MySQL", "Node.js", "TypeScript", "React", "Tailwind CSS", "UI/UX", "Team Work", "Communication", "Cisco", "Linux", "Windows Server", "Networking", "GIS", "Data Analysis"],
     avatar: "AL",
     photo: "https://media.githubusercontent.com/media/asklootz/IS-310/main/src/images/Ask-Bilde.webp",
@@ -68,6 +72,7 @@ export const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/mina-rebecca-remseth-b02607350/",
     github: "https://github.com/minaremseth",
     website: "#",
+    cv: "https://drive.google.com/file/d/1VeqAPZGjM0Ma6hTOZXc2XqIEJ_PHy96P/view?usp=sharing",
     skills: ["Figma", "Trello/Jira", "CSS/Tailwind CSS", "HTML", "React", "UI/UX", "Team Work", "Communication"],
     avatar: "MR",
     photo: "https://media.githubusercontent.com/media/asklootz/IS-310/main/src/images/Mina-Bilde.webp",
@@ -85,6 +90,7 @@ export const MEMBERS: Member[] = [
     linkedin: "https://www.linkedin.com/in/rikke-krauss-910953432",
     github: "https://github.com/Rikkekrauss",
     website: "#",
+    cv: "https://drive.google.com/file/d/1AvGI_8OuJaaGXSgz_I0i0BGEqUNg9tcV/view?usp=sharing", 
     skills: ["Figma", "UX/UI", "Prototyping", "React", "QA", "Github", "Team Work", "Communication"],
     avatar: "RSK",
     photo: "https://media.githubusercontent.com/media/asklootz/IS-310/main/src/images/Rikke-Bilde.webp",

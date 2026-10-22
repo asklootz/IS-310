@@ -76,6 +76,12 @@ export default function AboutSection({ lang }: Props) {
                 </div>
 
                 <div className="flex justify-center gap-2 mb-4" onClick={(e) => e.stopPropagation()}>
+                  <a href={m.cv} title="CV" aria-label={`CV – ${m.name}`} target="_blank" rel="noreferrer"
+                    className="w-8 h-8 rounded-lg flex items-center justify-center border border-navy-700/20 dark:border-navy-700/40 text-navy-500 dark:text-navy-400 hover:text-brand hover:border-brand/40 transition-all">
+                    <svg aria-hidden="true" className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM14 2v6h6M8 13h8M8 17h6" />
+                    </svg>
+                  </a>
                   <a href={`mailto:${m.email}`} title="Email"
                     className="w-8 h-8 rounded-lg flex items-center justify-center border border-navy-700/20 dark:border-navy-700/40 text-navy-500 dark:text-navy-400 hover:text-brand hover:border-brand/40 transition-all">
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -191,6 +197,10 @@ export default function AboutSection({ lang }: Props) {
                     </div>
 
                     <div className="flex flex-wrap gap-3">
+                      <a href={m.cv} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-5 py-3 border border-navy-700/20 dark:border-navy-700/40 text-sm font-semibold text-navy-700 dark:text-navy-200 rounded-xl hover:border-brand/40 hover:text-brand transition-all">
+                        <svg aria-hidden="true" className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zM14 2v6h6M8 13h8M8 17h6" /></svg>
+                        CV
+                      </a>
                       <a href={`mailto:${m.email}`} className="flex items-center gap-2 px-6 py-3 bg-brand text-navy-900 font-display font-700 rounded-xl hover:bg-brand-dim transition-colors">
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
